@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2">
                   <div className="p-4">
-                    <Card className="h-full shadow-lg border-border/50">
+                    <Card className="h-full shadow-lg border-border/50 transition-all duration-300 hover:shadow-primary/20">
                       <CardContent className="flex h-full flex-col items-center justify-center p-6 text-center">
                         <p className="flex-grow text-lg italic text-muted-foreground">"{testimonial.text}"</p>
                         <div className="mt-6 flex items-center gap-4">

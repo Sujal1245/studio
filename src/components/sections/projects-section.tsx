@@ -64,7 +64,7 @@ export default function ProjectsSection() {
         </div>
         <div className="mx-auto mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
+            <Card key={index} className="overflow-hidden border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 flex flex-col">
               <Image
                 src={project.image}
                 alt={project.title}

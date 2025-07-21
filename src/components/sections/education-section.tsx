@@ -38,7 +38,7 @@ export default function EducationSection() {
         </div>
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-1 lg:grid-cols-3">
           {educationData.map((edu, index) => (
-             <Card key={index} className="border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+             <Card key={index} className="border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2">
                <CardHeader className="flex flex-row items-center gap-4">
                  <div className="rounded-full bg-primary/10 p-3">
                    <GraduationCap className="h-6 w-6 text-primary" />

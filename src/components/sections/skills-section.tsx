@@ -13,7 +13,7 @@ const skillsData = {
 };
 
 const SkillCategory = ({ title, skills, icon }: { title: string, skills: string[], icon: React.ReactNode }) => (
-  <Card className="border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+  <Card className="border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2">
     <CardHeader className="flex flex-row items-center gap-4">
       <div className="p-3 rounded-full bg-primary/10">
         {icon}

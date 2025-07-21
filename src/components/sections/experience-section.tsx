@@ -35,7 +35,7 @@ export default function ExperienceSection() {
         </div>
         <div className="mx-auto mt-12 grid max-w-3xl gap-8">
           {experienceData.map((exp, index) => (
-            <Card key={index} className="border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
+            <Card key={index} className="border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 flex flex-col">
               <CardHeader>
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-4">
