@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'DevLaunchpad',
+  title: 'Sujal Kumar',
   description: 'Portfolio of an Android Developer',
 };
 

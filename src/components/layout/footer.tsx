@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-card text-card-foreground shadow-inner">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-8 sm:flex-row md:px-6">
         <p className="text-sm text-muted-foreground">
-          © {year} DevLaunchpad. All rights reserved.
+          © {year} Sujal Kumar. All rights reserved.
         </p>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" asChild>

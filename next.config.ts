@@ -22,6 +22,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'firebasestudio-hosting-82a65.web.app',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
