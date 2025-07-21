@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Smartphone, Database, Rocket, Layers3 as ArchIcon } from "lucide-react";
+import { Code, Smartphone, Database, Rocket, Layers3 as ArchIcon, Wrench } from "lucide-react";
 import AnimatedSection from "@/components/animated-section";
 
 const skillsData = {
@@ -43,13 +43,13 @@ export default function SkillsSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
+        <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2 lg:grid-cols-3">
            <SkillCategory title="Languages" skills={skillsData.languages} icon={<Code className="h-6 w-6 text-primary" />} />
            <SkillCategory title="Android Development" skills={skillsData.android} icon={<Smartphone className="h-6 w-6 text-primary" />} />
            <SkillCategory title="Dependency Injection" skills={skillsData.di} icon={<Rocket className="h-6 w-6 text-primary" />} />
            <SkillCategory title="Firebase" skills={skillsData.firebase} icon={<Database className="h-6 w-6 text-primary" />} />
            <SkillCategory title="Architecture" skills={skillsData.architecture} icon={<ArchIcon className="h-6 w-6 text-primary" />} />
-           <SkillCategory title="Tools & Platforms" skills={skillsData.tools} icon={<Code className="h-6 w-6 text-primary" />} />
+           <SkillCategory title="Tools & Platforms" skills={skillsData.tools} icon={<Wrench className="h-6 w-6 text-primary" />} />
         </div>
       </div>
     </AnimatedSection>

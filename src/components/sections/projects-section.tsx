@@ -71,7 +71,7 @@ export default function ProjectsSection() {
                 alt={project.title}
                 width={600}
                 height={400}
-                className="h-60 w-full object-cover"
+                className="aspect-[4/3] w-full object-cover"
                 data-ai-hint={project.imageHint}
               />
               <CardHeader>
