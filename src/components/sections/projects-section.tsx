@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Demsi, Bodo Keyboard App",
     description: "Built the first Android keyboard for the Bodo language, one of India's 22 scheduled languages. Reached 1,000+ Play Store downloads and was featured in regional media.",
-    image: "/images/project-demsi.png",
+    image: "/images/projects/demsi.png",
     imageHint: "keyboard app",
     tags: ["Bodo Language", "Android Keyboard"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.nlpcse.bodokeyboardv1",
