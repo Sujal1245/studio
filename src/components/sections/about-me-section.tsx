@@ -17,7 +17,7 @@ export default function AboutMeSection() {
           </div>
           <div className="flex items-center justify-center">
              <Image
-              src="/images/about.png"
+              src="https://placehold.co/550x310.png"
               alt="About me image"
               width={550}
               height={310}
