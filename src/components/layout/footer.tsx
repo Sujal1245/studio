@@ -12,17 +12,17 @@ const Footer = () => {
         </p>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="icon" asChild>
-            <a href="#" aria-label="Twitter">
+            <a href="https://x.com/SujalKumar7899" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <Twitter className="h-5 w-5" />
             </a>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <a href="#" aria-label="GitHub">
+            <a href="https://github.com/Sujal1245" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Github className="h-5 w-5" />
             </a>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/sujal-kumar-9a209b179/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
             </a>
           </Button>

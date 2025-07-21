@@ -62,8 +62,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold">LinkedIn</h4>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
-                    linkedin/Sujal
+                  <a href="https://www.linkedin.com/in/sujal-kumar-9a209b179/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                    linkedin.com/in/sujal-kumar-9a209b179
                   </a>
                 </div>
               </div>
@@ -73,8 +73,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold">GitHub</h4>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
-                    github/Sujal
+                  <a href="https://github.com/Sujal1245" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                    github.com/Sujal1245
                   </a>
                 </div>
               </div>
@@ -84,8 +84,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold">Twitter</h4>
-                  <a href="#" className="text-muted-foreground hover:text-primary">
-                    @Sujal
+                  <a href="https://x.com/SujalKumar7899" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+                    @SujalKumar7899
                   </a>
                 </div>
               </div>
