@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Smartphone, Database, Rocket, Architecture as ArchIcon } from "lucide-react";
+import { Code, Smartphone, Database, Rocket, Layers3 as ArchIcon } from "lucide-react";
 import AnimatedSection from "@/components/animated-section";
 
 const skillsData = {
