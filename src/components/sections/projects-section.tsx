@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Demsi, Bodo Keyboard App",
     description: "Built the first Android keyboard for the Bodo language, one of India's 22 scheduled languages. Reached 1,000+ Play Store downloads and was featured in regional media.",
-    image: "https://placehold.co/600x400.png",
+    image: "/images/project-demsi.png",
     imageHint: "keyboard app",
     tags: ["Bodo Language", "Android Keyboard"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.nlpcse.bodokeyboardv1",
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "WallisWall, Simple Wallpapers",
     description: "Developed a Material-themed wallpaper app with Firebase backend and smooth image loading using Glide.",
-    image: "https://raw.githubusercontent.com/Sujal1245/WALLisWALL-Wallpaper-App/main/512.png",
+    image: "/images/project-walliswall.png",
     imageHint: "wallpaper app",
     tags: ["Material Design", "Firebase", "Glide"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.wallpapers.WALLisWALL",
@@ -27,7 +27,7 @@ const projects = [
   {
     title: "SelfNotes, Alarm & Routine Manager",
     description: "Created an app to manage daily alarms and routines using Android's AlarmManager. Focused on delivering a clean and reliable UI for everyday productivity.",
-    image: "https://placehold.co/600x400.png",
+    image: "/images/project-selfnotes.png",
     imageHint: "notes app",
     tags: ["AlarmManager", "Productivity"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.Notes.SelfNotes",
@@ -35,7 +35,7 @@ const projects = [
   {
     title: "SelfEmot, Look into Photos",
     description: "Built an image recognition app using Google's ML Kit to detect and label objects in photos with real-time confidence scores.",
-    image: "https://placehold.co/600x400.png",
+    image: "/images/project-selfemot.png",
     imageHint: "photo recognition",
     tags: ["Google ML Kit", "Image Recognition"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.SelfEmot",
@@ -43,7 +43,7 @@ const projects = [
   {
     title: "MarketGo, Store Manager",
     description: "Developed an inventory management app using Sugar ORM to handle local data storage and basic stock tracking.",
-    image: "https://placehold.co/600x400.png",
+    image: "/images/project-marketgo.png",
     imageHint: "inventory app",
     tags: ["Sugar ORM", "Inventory Management"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.AndroidMarket",

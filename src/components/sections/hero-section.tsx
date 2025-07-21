@@ -47,7 +47,7 @@ export default function HeroSection() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="https://placehold.co/550x550.png"
+              src="/images/profile.png"
               alt="Profile Picture"
               width={550}
               height={550}
