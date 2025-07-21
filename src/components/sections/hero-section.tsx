@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { MoveRight } from "lucide-react";
+import { MoveRight, CodeXml } from "lucide-react";
 import AnimatedSection from "@/components/animated-section";
 
 export default function HeroSection() {
@@ -12,13 +12,7 @@ export default function HeroSection() {
           <div className="flex flex-col justify-center space-y-6">
             <div className="space-y-2 text-center lg:text-left">
               <div className="mb-4 inline-block animate-float">
-                <Image
-                  src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43sVdeOczJoOUqA-3v1b-E9Z_dq-GAlA-Is9ToinonvY"
-                  alt="Android Logo"
-                  width={100}
-                  height={100}
-                  className="h-24 w-24 text-primary drop-shadow-[0_2px_4px_rgba(var(--primary-rgb),0.4)]"
-                />
+                <CodeXml className="h-24 w-24 text-primary drop-shadow-[0_2px_4px_rgba(var(--primary-rgb),0.4)]" />
               </div>
               <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-primary">
                 Sujal Kumar
