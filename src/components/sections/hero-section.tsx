@@ -6,19 +6,19 @@ import AnimatedSection from "@/components/animated-section";
 
 export default function HeroSection() {
   return (
-    <AnimatedSection id="hero" className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+    <AnimatedSection id="hero" className="w-full pt-12 md:pt-24 lg:pt-32 pb-12 md:pb-24 lg:pb-32 xl:pb-48">
       <div className="container px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className="flex flex-col justify-center space-y-6">
             <div className="space-y-2 text-center lg:text-left">
               <div className="mb-4 inline-block animate-float">
-                <svg
+                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 256 256"
                   className="h-24 w-24 text-primary drop-shadow-[0_2px_4px_rgba(var(--primary-rgb),0.4)]"
                   fill="currentColor"
                 >
-                  <path d="M12.3,4.95,12,4.8l-.3.15L5.85,9.2,5.56,9.44l.21,1.19.21,1.19.49-.24,5.4-2.7.1-.05.1.05,5.4,2.7.49.24.21-1.19.21-1.19-.29-.24Zm-6.72,9L5.4,13.7v2.38l.18.09,6,3,.42.21.42-.21,6-3,.18-.09V13.7l-.18-.09-5.4-2.7-.3-.15-.3.15-5.4,2.7Z" />
+                  <path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm-4,156a4,4,0,0,1-4,4H44a4,4,0,0,1-4-4V60a4,4,0,0,1,4-4H208a4,4,0,0,1,4,4ZM80,96a16,16,0,1,1,16,16A16,16,0,0,1,80,96Zm96,64a16,16,0,1,1,16-16A16,16,0,0,1,176,160Z" />
                 </svg>
               </div>
               <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-primary">
