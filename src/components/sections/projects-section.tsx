@@ -32,6 +32,7 @@ const projects = [
     imageHint: "notes app",
     tags: ["AlarmManager", "Productivity"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.Notes.SelfNotes",
+    githubLink: "https://github.com/Sujal1245/SelfNotes",
   },
   {
     title: "SelfEmot, Look into Photos",
@@ -40,6 +41,7 @@ const projects = [
     imageHint: "photo recognition",
     tags: ["Google ML Kit", "Image Recognition"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.SelfEmot",
+    githubLink: "https://github.com/Sujal1245/SelfEmot",
   },
   {
     title: "MarketGo, Store Manager",
@@ -48,6 +50,7 @@ const projects = [
     imageHint: "inventory app",
     tags: ["Sugar ORM", "Inventory Management"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.AndroidMarket",
+    githubLink: "https://github.com/Sujal1245/AndroidMarket",
   },
 ];
 
