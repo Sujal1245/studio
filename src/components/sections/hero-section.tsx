@@ -47,7 +47,7 @@ export default function HeroSection() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/images/profile.png"
+              src="/images/profile.jpeg"
               alt="Profile Picture"
               width={550}
               height={550}
