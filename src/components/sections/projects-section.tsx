@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github } from "lucide-react";
 import AnimatedSection from "@/components/animated-section";
 
 const projects = [
@@ -13,15 +13,16 @@ const projects = [
     image: "https://placehold.co/600x400.png",
     imageHint: "keyboard app",
     tags: ["Bodo Language", "Android Keyboard"],
-    link: "https://play.google.com/store/apps/details?id=com.nlpcse.bodokeyboardv1",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.nlpcse.bodokeyboardv1",
   },
   {
     title: "WallisWall, Simple Wallpapers",
     description: "Developed a Material-themed wallpaper app with Firebase backend and smooth image loading using Glide.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://raw.githubusercontent.com/Sujal1245/WALLisWALL-Wallpaper-App/main/512.png",
     imageHint: "wallpaper app",
     tags: ["Material Design", "Firebase", "Glide"],
-    link: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.wallpapers.WALLisWALL",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.wallpapers.WALLisWALL",
+    githubLink: "https://github.com/Sujal1245/WALLisWALL-Wallpaper-App",
   },
   {
     title: "SelfNotes, Alarm & Routine Manager",
@@ -29,7 +30,7 @@ const projects = [
     image: "https://placehold.co/600x400.png",
     imageHint: "notes app",
     tags: ["AlarmManager", "Productivity"],
-    link: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.Notes.SelfNotes",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.Notes.SelfNotes",
   },
   {
     title: "SelfEmot, Look into Photos",
@@ -37,7 +38,7 @@ const projects = [
     image: "https://placehold.co/600x400.png",
     imageHint: "photo recognition",
     tags: ["Google ML Kit", "Image Recognition"],
-    link: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.SelfEmot",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.SelfEmot",
   },
   {
     title: "MarketGo, Store Manager",
@@ -45,7 +46,7 @@ const projects = [
     image: "https://placehold.co/600x400.png",
     imageHint: "inventory app",
     tags: ["Sugar ORM", "Inventory Management"],
-    link: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.AndroidMarket",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.AndroidMarket",
   },
 ];
 
@@ -84,13 +85,23 @@ export default function ProjectsSection() {
               <CardContent className="flex-grow">
                 <CardDescription>{project.description}</CardDescription>
               </CardContent>
-              <CardFooter>
-                <Button asChild variant="outline" className="w-full">
-                  <Link href={project.link} target="_blank" rel="noopener noreferrer">
-                    View Project
-                    <ArrowUpRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+              <CardFooter className="flex gap-2">
+                {project.playStoreLink && (
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href={project.playStoreLink} target="_blank" rel="noopener noreferrer">
+                      Play Store
+                      <ArrowUpRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                )}
+                {project.githubLink && (
+                  <Button asChild variant="secondary" className="w-full">
+                    <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      GitHub
+                    </Link>
+                  </Button>
+                )}
               </CardFooter>
             </Card>
           ))}
