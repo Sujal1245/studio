@@ -1,6 +1,27 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { GraduationCap } from "lucide-react";
 
+const educationData = [
+  {
+    institution: "Tezpur University",
+    degree: "Bachelor of Technology, Electronics and Communication Engineering (ECE)",
+    period: "Nov 2022 - Present",
+    details: "CGPA: 7.68 | SGPA: 7.75",
+  },
+  {
+    institution: "Paramount Academy School",
+    degree: "Higher Secondary",
+    period: "2020 - 2022",
+    details: "Score: 89.2%",
+  },
+  {
+    institution: "North Point Children's School",
+    degree: "Matriculation",
+    period: "2019 - 2020",
+    details: "Score: 88.4%",
+  },
+];
+
 export default function EducationSection() {
   return (
     <section id="education" className="w-full py-12 md:py-24 lg:py-32">
@@ -14,24 +35,26 @@ export default function EducationSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto mt-12 grid max-w-md gap-6">
-          <Card className="shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <CardHeader className="flex flex-row items-center gap-4">
-              <div className="rounded-md bg-primary/10 p-3">
-                <GraduationCap className="h-8 w-8 text-primary" />
-              </div>
-              <div>
-                <CardTitle className="font-headline text-xl">Bachelor of Technology in ECE</CardTitle>
-                <p className="text-sm text-muted-foreground">Tezpur University</p>
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-2">
-              <p className="font-semibold">Expected Graduation: 2026</p>
-              <p className="text-muted-foreground">
-                Relevant coursework includes Data Structures and Algorithms, Object-Oriented Programming, and Mobile Application Development.
-              </p>
-            </CardContent>
-          </Card>
+        <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-1 lg:grid-cols-3">
+          {educationData.map((edu, index) => (
+             <Card key={index} className="shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+               <CardHeader className="flex flex-row items-center gap-4">
+                 <div className="rounded-md bg-primary/10 p-3">
+                   <GraduationCap className="h-8 w-8 text-primary" />
+                 </div>
+                 <div className="flex-1">
+                   <CardTitle className="font-headline text-xl">{edu.degree}</CardTitle>
+                   <p className="text-sm text-muted-foreground">{edu.institution}</p>
+                 </div>
+               </CardHeader>
+               <CardContent className="space-y-2 pl-16">
+                 <p className="font-semibold">{edu.period}</p>
+                 <p className="text-muted-foreground">
+                   {edu.details}
+                 </p>
+               </CardContent>
+             </Card>
+          ))}
         </div>
       </div>
     </section>

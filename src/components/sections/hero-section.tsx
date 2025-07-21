@@ -11,7 +11,7 @@ export default function HeroSection() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-primary">
-                Your Name
+                Sujal Kumar
               </h1>
               <h2 className="text-2xl font-medium tracking-tight text-foreground/80 sm:text-3xl">
                 Android Developer

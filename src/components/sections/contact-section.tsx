@@ -51,8 +51,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary">
-                    your.email@example.com
+                  <a href="mailto:sujalmuz1245@gmail.com" className="text-muted-foreground hover:text-primary">
+                    sujalmuz1245@gmail.com
                   </a>
                 </div>
               </div>
@@ -63,7 +63,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold">LinkedIn</h4>
                   <a href="#" className="text-muted-foreground hover:text-primary">
-                    linkedin.com/in/your-profile
+                    linkedin/Sujal
                   </a>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold">GitHub</h4>
                   <a href="#" className="text-muted-foreground hover:text-primary">
-                    github.com/your-username
+                    github/Sujal
                   </a>
                 </div>
               </div>
@@ -85,7 +85,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold">Twitter</h4>
                   <a href="#" className="text-muted-foreground hover:text-primary">
-                    @your_handle
+                    @Sujal
                   </a>
                 </div>
               </div>

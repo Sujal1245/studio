@@ -6,13 +6,11 @@ const experienceData = [
   {
     company: "Vrid",
     title: "Android Development Intern",
-    period: "Ongoing",
+    period: "Jun 2025 - Present",
     type: "Remote",
     description: [
-      "Contributed to the development of a new social media feature, increasing user engagement by 15%.",
-      "Collaborated with the UI/UX team to implement modern, responsive layouts using Jetpack Compose.",
-      "Participated in agile development cycles, including daily stand-ups, sprint planning, and retrospectives.",
-      "Fixed critical bugs and improved application performance and stability.",
+      "Worked on core features and UI improvements for a finance app, including fixed deposit support, balance privacy toggle, multi-device sync, and crash handling.",
+      "Contributed to backend integration with Firestore and ongoing development of a chatbot interface using Jetpack Compose.",
     ],
   },
 ];

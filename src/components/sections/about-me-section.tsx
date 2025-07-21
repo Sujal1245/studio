@@ -34,13 +34,13 @@ export default function AboutMeSection() {
   const form = useForm<AboutMeFormValues>({
     resolver: zodResolver(aboutMeSchema),
     defaultValues: {
-      name: "Your Name",
+      name: "Sujal Kumar",
       title: "Android Developer",
-      experience: "Android Development Intern at Vrid (Remote, Ongoing).",
-      projects: "4-5 Android apps on Google Play Store, including a productivity app and a social networking app.",
-      education: "B.Tech in ECE from Tezpur University (2026 graduate).",
-      skills: "Kotlin, Java, Android SDK, Jetpack Compose, MVVM, Coroutines, Dagger-Hilt, Retrofit, Git.",
-      achievements: ""
+      experience: "Android Development Intern, Vrid (Jun 2025 - Present, Remote). Worked on core features and UI improvements for a finance app, including fixed deposit support, balance privacy toggle, multi-device sync, and crash handling. Contributed to backend integration with Firestore and ongoing development of a chatbot interface using Jetpack Compose.",
+      projects: "Demsi, Bodo Keyboard App. WallisWall, Simple Wallpapers. SelfNotes, Alarm & Routine Manager. SelfEmot, Look into Photos. MarketGo, Store Manager.",
+      education: "Tezpur University, Bachelor of Technology, Electronics and Communication Engineering (ECE) (Nov 2022 - Present).",
+      skills: "Languages: Kotlin, Java, Python, C++, C. Android: Jetpack Compose, Coroutines, Flows, RxJava, SQLDelight, Room, DataStore, Retrofit, Ktor, Gradle, Material 3, XML. Dependency Injection: Hilt, Koin. Firebase: Authentication, Firestore, Messaging (FCM), Crashlytics, App Distribution, Cloud Functions. Architecture: MVVM, Clean Architecture. Tools: Git, GitHub, GitHub Actions, Mixpanel, Trello, Play Console.",
+      achievements: "Extracurricular Activities: Google Developer Student Club (GDSC), App Dev. SME (Sep 2024 - Present). Tezpur University Chess Club (TUCC), Member (Nov 2022 - Present). National Service Scheme (NSS), Student Volunteer (Nov 2022 - May 2024)."
     },
   });
 

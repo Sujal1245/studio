@@ -7,35 +7,43 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Productivity Pro",
-    description: "A comprehensive productivity app to manage tasks, notes, and habits, helping users stay organized and focused.",
+    title: "Demsi, Bodo Keyboard App",
+    description: "Built the first Android keyboard for the Bodo language, one of India's 22 scheduled languages. Reached 1,000+ Play Store downloads and was featured in regional media.",
     image: "https://placehold.co/600x400.png",
-    imageHint: "app screenshot",
-    tags: ["Kotlin", "Jetpack Compose", "Room DB"],
+    imageHint: "keyboard app",
+    tags: ["Bodo Language", "Android Keyboard"],
     link: "#",
   },
   {
-    title: "ConnectSphere",
-    description: "A social networking app that connects people with shared interests and hobbies in their local area.",
+    title: "WallisWall, Simple Wallpapers",
+    description: "Developed a Material-themed wallpaper app with Firebase backend and smooth image loading using Glide.",
     image: "https://placehold.co/600x400.png",
-    imageHint: "mobile application",
-    tags: ["Java", "MVVM", "Firebase", "Retrofit"],
+    imageHint: "wallpaper app",
+    tags: ["Material Design", "Firebase", "Glide"],
     link: "#",
   },
   {
-    title: "FitTrack",
-    description: "A fitness tracking application to monitor workouts, log meals, and track progress towards health goals.",
+    title: "SelfNotes, Alarm & Routine Manager",
+    description: "Created an app to manage daily alarms and routines using Android's AlarmManager. Focused on delivering a clean and reliable UI for everyday productivity.",
     image: "https://placehold.co/600x400.png",
-    imageHint: "health application",
-    tags: ["Kotlin", "Coroutines", "Google Fit API"],
+    imageHint: "notes app",
+    tags: ["AlarmManager", "Productivity"],
     link: "#",
   },
   {
-    title: "E-Learn Platform",
-    description: "An educational app offering a wide range of courses and interactive lessons for students of all ages.",
+    title: "SelfEmot, Look into Photos",
+    description: "Built an image recognition app using Google's ML Kit to detect and label objects in photos with real-time confidence scores.",
     image: "https://placehold.co/600x400.png",
-    imageHint: "learning app",
-    tags: ["Jetpack Compose", "Dagger-Hilt", "ExoPlayer"],
+    imageHint: "photo recognition",
+    tags: ["Google ML Kit", "Image Recognition"],
+    link: "#",
+  },
+  {
+    title: "MarketGo, Store Manager",
+    description: "Developed an inventory management app using Sugar ORM to handle local data storage and basic stock tracking.",
+    image: "https://placehold.co/600x400.png",
+    imageHint: "inventory app",
+    tags: ["Sugar ORM", "Inventory Management"],
     link: "#",
   },
 ];
@@ -53,9 +61,9 @@ export default function ProjectsSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+        <div className="mx-auto mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <Card key={index} className="overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -72,13 +80,13 @@ export default function ProjectsSection() {
                   ))}
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <CardDescription>{project.description}</CardDescription>
               </CardContent>
               <CardFooter>
                 <Button asChild variant="outline" className="w-full">
                   <Link href={project.link} target="_blank" rel="noopener noreferrer">
-                    View on Google Play
+                    View Project
                     <ArrowUpRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
