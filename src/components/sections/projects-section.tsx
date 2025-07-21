@@ -64,7 +64,7 @@ export default function ProjectsSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid max-w-5xl gap-8 sm:grid-cols-1 md:grid-cols-2">
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 flex flex-col">
               <Image
@@ -72,7 +72,7 @@ export default function ProjectsSection() {
                 alt={project.title}
                 width={600}
                 height={400}
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[16/9] w-full object-cover"
                 data-ai-hint={project.imageHint}
               />
               <CardHeader>
