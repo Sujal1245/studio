@@ -12,7 +12,7 @@ const projects = [
     image: "https://play-lh.googleusercontent.com/I2kwnx5v594yL1MSi-7-9-gZ2vw7v195a_T6Gn3r_XH9Uv-42V-T0E7D019lKw4kLNM=s180-rw",
     imageHint: "keyboard app",
     tags: ["Bodo Language", "Android Keyboard"],
-    link: "https://play.google.com/store/apps/details?id=com.sujal.demsi",
+    link: "https://play.google.com/store/apps/details?id=com.nlpcse.bodokeyboardv1",
   },
   {
     title: "WallisWall, Simple Wallpapers",
@@ -20,7 +20,7 @@ const projects = [
     image: "https://play-lh.googleusercontent.com/9C0pYn227_-A1sY-i1hM9GBaHhOuh20yv6AFbmzL_Xo1-k4G_k3q7sTv0oK-5aGqIg=s180-rw",
     imageHint: "wallpaper app",
     tags: ["Material Design", "Firebase", "Glide"],
-    link: "https://play.google.com/store/apps/details?id=com.sujal.walliswall",
+    link: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.wallpapers.WALLisWALL",
   },
   {
     title: "SelfNotes, Alarm & Routine Manager",
@@ -28,7 +28,7 @@ const projects = [
     image: "https://play-lh.googleusercontent.com/jC_6B-s-19t_5oG0RDRH9m2S2YpAbIs05_R21j5hXJ7_HqjBqsv942g_N_Aqd2D-eA=s180-rw",
     imageHint: "notes app",
     tags: ["AlarmManager", "Productivity"],
-    link: "https://play.google.com/store/apps/details?id=com.sujal.selfnotes",
+    link: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.Notes.SelfNotes",
   },
   {
     title: "SelfEmot, Look into Photos",
@@ -36,7 +36,7 @@ const projects = [
     image: "https://play-lh.googleusercontent.com/xT50qCgUnm-CF-P0A60cZ8s0nNf2xO2-WjnV2sNfM4lTwC6P26pYyG4rY2xZ9A6n1w=s180-rw",
     imageHint: "photo recognition",
     tags: ["Google ML Kit", "Image Recognition"],
-    link: "https://play.google.com/store/apps/details?id=com.sujal.selfemot",
+    link: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.SelfEmot",
   },
   {
     title: "MarketGo, Store Manager",
@@ -44,7 +44,7 @@ const projects = [
     image: "https://play-lh.googleusercontent.com/X-cM4VaxM89N-Oa2g-y2T59Qo-0Vqg1tT7R0Q5q4qG-Xz5b6qY0a9f8s8g=s180-rw",
     imageHint: "inventory app",
     tags: ["Sugar ORM", "Inventory Management"],
-    link: "https://play.google.com/store/apps/details?id=com.sujal.marketgo",
+    link: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.AndroidMarket",
   },
 ];
 
