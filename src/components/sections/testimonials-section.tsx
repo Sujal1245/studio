@@ -5,28 +5,28 @@ import AnimatedSection from "@/components/animated-section";
 
 const testimonials = [
   {
-    name: "Jane Doe",
-    title: "Lead Developer, Vrid",
-    avatar: "/images/avatar-jane-doe.png",
-    avatarHint: "woman portrait",
-    fallback: "JD",
-    text: "Working with them has been an absolute pleasure. Their expertise in Android development is evident in the quality of their work. They are a proactive and detail-oriented developer who consistently delivers excellent results.",
+    name: "Supervisor Name",
+    title: "Role, Company",
+    avatar: "https://placehold.co/100x100.png",
+    avatarHint: "person portrait",
+    fallback: "SN",
+    text: "Add a quote from a supervisor or colleague here to build credibility and showcase your positive working relationships.",
   },
   {
-    name: "John Smith",
-    title: "Project Manager, Vrid",
-    avatar: "/images/avatar-john-smith.png",
-    avatarHint: "man portrait",
-    fallback: "JS",
-    text: "A highly skilled and dedicated team member. Their ability to tackle complex problems and collaborate effectively with the team was instrumental in our project's success. I highly recommend them.",
+    name: "Colleague Name",
+    title: "Role, Company",
+    avatar: "https://placehold.co/100x100.png",
+    avatarHint: "person portrait",
+    fallback: "CN",
+    text: "You can include another testimonial here. It's a great way to highlight your skills and work ethic from different perspectives.",
   },
-    {
-    name: "Emily White",
-    title: "UI/UX Designer, Vrid",
-    avatar: "/images/avatar-emily-white.png",
-    avatarHint: "person face",
-    fallback: "EW",
-    text: "Their attention to UI/UX details is remarkable. They transformed our designs into a beautiful, functional, and intuitive Android app. A great collaborator and a valuable asset to any team.",
+  {
+    name: "Client or Manager",
+    title: "Role, Company",
+    avatar: "https://placehold.co/100x100.png",
+    avatarHint: "person portrait",
+    fallback: "CM",
+    text: "Having a few testimonials can make your profile more compelling to potential employers or collaborators.",
   },
 ];
 
