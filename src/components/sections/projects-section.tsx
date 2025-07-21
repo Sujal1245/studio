@@ -1,3 +1,4 @@
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -27,7 +28,7 @@ const projects = [
   {
     title: "SelfNotes, Alarm & Routine Manager",
     description: "Created an app to manage daily alarms and routines using Android's AlarmManager. Focused on delivering a clean and reliable UI for everyday productivity.",
-    image: "/images/project-selfnotes.png",
+    image: "/images/projects/selfnotes.png",
     imageHint: "notes app",
     tags: ["AlarmManager", "Productivity"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.Notes.SelfNotes",
@@ -35,7 +36,7 @@ const projects = [
   {
     title: "SelfEmot, Look into Photos",
     description: "Built an image recognition app using Google's ML Kit to detect and label objects in photos with real-time confidence scores.",
-    image: "/images/project-selfemot.png",
+    image: "/images/projects/selfemot.png",
     imageHint: "photo recognition",
     tags: ["Google ML Kit", "Image Recognition"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.SelfEmot",
@@ -43,7 +44,7 @@ const projects = [
   {
     title: "MarketGo, Store Manager",
     description: "Developed an inventory management app using Sugar ORM to handle local data storage and basic stock tracking.",
-    image: "/images/project-marketgo.png",
+    image: "/images/projects/marketgo.png",
     imageHint: "inventory app",
     tags: ["Sugar ORM", "Inventory Management"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.AndroidMarket",
