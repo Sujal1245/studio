@@ -1,6 +1,3 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
 const Footer = () => {
   const year = new Date().getFullYear();
 
@@ -10,23 +7,23 @@ const Footer = () => {
         <p className="text-sm text-muted-foreground">
           © {year} Sujal Kumar. All rights reserved.
         </p>
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" asChild>
-            <a href="https://x.com/SujalKumar7899" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <Twitter className="h-5 w-5" />
-            </a>
-          </Button>
-          <Button variant="ghost" size="icon" asChild>
-            <a href="https://github.com/Sujal1245" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <Github className="h-5 w-5" />
-            </a>
-          </Button>
-          <Button variant="ghost" size="icon" asChild>
-            <a href="https://www.linkedin.com/in/sujal-kumar-9a209b179/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <Linkedin className="h-5 w-5" />
-            </a>
-          </Button>
-        </div>
+        {/*<div className="flex items-center gap-2">*/}
+        {/*  <Button variant="ghost" size="icon" asChild>*/}
+        {/*    <a href="https://x.com/SujalKumar7899" target="_blank" rel="noopener noreferrer" aria-label="Twitter">*/}
+        {/*      <Twitter className="h-5 w-5" />*/}
+        {/*    </a>*/}
+        {/*  </Button>*/}
+        {/*  <Button variant="ghost" size="icon" asChild>*/}
+        {/*    <a href="https://github.com/Sujal1245" target="_blank" rel="noopener noreferrer" aria-label="GitHub">*/}
+        {/*      <Github className="h-5 w-5" />*/}
+        {/*    </a>*/}
+        {/*  </Button>*/}
+        {/*  <Button variant="ghost" size="icon" asChild>*/}
+        {/*    <a href="https://www.linkedin.com/in/sujal-kumar-9a209b179/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">*/}
+        {/*      <Linkedin className="h-5 w-5" />*/}
+        {/*    </a>*/}
+        {/*  </Button>*/}
+        {/*</div>*/}
       </div>
     </footer>
   );
