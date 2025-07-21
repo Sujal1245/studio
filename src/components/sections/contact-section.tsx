@@ -1,11 +1,58 @@
+"use client";
+
+import { useEffect } from "react";
+import { useFormState } from "react-dom";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import AnimatedSection from "@/components/animated-section";
+import { submitContactForm } from "@/app/actions";
+import { useToast } from "@/hooks/use-toast";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+
+const contactFormSchema = z.object({
+  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
+  email: z.string().email({ message: 'Please enter a valid email address.' }),
+  message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
+});
+
 
 export default function ContactSection() {
+  const { toast } = useToast();
+  const [state, formAction] = useFormState(submitContactForm, { message: "" });
+
+  const form = useForm({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
+  useEffect(() => {
+    if (state.message === 'Message sent successfully!') {
+      toast({
+        title: "Success!",
+        description: state.message,
+      });
+      form.reset();
+    } else if (state.message === 'Invalid form data' && state.issues) {
+       toast({
+        title: "Error",
+        description: "Please check the form for errors.",
+        variant: "destructive"
+      })
+    }
+  }, [state, toast, form]);
+
+
   return (
     <AnimatedSection id="contact" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
@@ -23,23 +70,52 @@ export default function ContactSection() {
               <CardDescription>Fill out the form and I'll get back to you as soon as possible.</CardDescription>
             </CardHeader>
             <CardContent>
-              <form className="space-y-4">
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <label htmlFor="name">Name</label>
-                    <Input id="name" placeholder="Your Name" />
+              <Form {...form}>
+                <form action={formAction} className="space-y-4">
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Name</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Your Name" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Email</FormLabel>
+                          <FormControl>
+                            <Input type="email" placeholder="your@email.com" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
                   </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email">Email</label>
-                    <Input id="email" type="email" placeholder="your@email.com" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="message">Message</label>
-                  <Textarea id="message" placeholder="Your message..." className="min-h-[120px]" />
-                </div>
-                <Button type="submit" className="w-full">Send Message</Button>
-              </form>
+                   <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Message</FormLabel>
+                        <FormControl>
+                           <Textarea placeholder="Your message..." className="min-h-[120px]" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <Button type="submit" className="w-full">Send Message</Button>
+                </form>
+              </Form>
             </CardContent>
           </Card>
 
