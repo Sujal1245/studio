@@ -18,7 +18,7 @@ const projects = [
   {
     title: "WallisWall, Simple Wallpapers",
     description: "Developed a Material-themed wallpaper app with Firebase backend and smooth image loading using Glide.",
-    image: "/images/project-walliswall.png",
+    image: "/images/projects/walliswall.png",
     imageHint: "wallpaper app",
     tags: ["Material Design", "Firebase", "Glide"],
     playStoreLink: "https://play.google.com/store/apps/details?id=com.Sujal_Industries.wallpapers.WALLisWALL",
