@@ -1,11 +1,10 @@
-import Image from "next/image";
 import AnimatedSection from "@/components/animated-section";
 
 export default function AboutMeSection() {
   return (
     <AnimatedSection id="about" className="w-full py-12 md:py-24 lg:py-32 bg-secondary/50">
       <div className="container px-4 md:px-6">
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+        <div className="mx-auto max-w-3xl text-center">
           <div className="space-y-4">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -14,16 +13,6 @@ export default function AboutMeSection() {
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               I am passionate about creating impactful mobile applications, demonstrated by my personal projects like the "Demsi" Bodo keyboard app, which has over 1,000 downloads. I am always eager to learn and apply new technologies to build innovative solutions.
             </p>
-          </div>
-          <div className="flex items-center justify-center">
-             <Image
-              src="/images/aboutme.jpeg"
-              alt="About me image"
-              width={550}
-              height={310}
-              className="aspect-video overflow-hidden rounded-xl object-cover shadow-lg"
-              data-ai-hint="developer working"
-            />
           </div>
         </div>
       </div>
