@@ -3,10 +3,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import AnimatedSection from "@/components/animated-section";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
+    <AnimatedSection id="contact" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
@@ -16,7 +17,7 @@ export default function ContactSection() {
         </div>
 
         <div className="mx-auto mt-12 grid max-w-5xl items-start gap-8 lg:grid-cols-2 lg:gap-12">
-          <Card className="shadow-lg">
+          <Card className="shadow-lg border-border/50">
             <CardHeader>
               <CardTitle>Send a Message</CardTitle>
               <CardDescription>Fill out the form and I'll get back to you as soon as possible.</CardDescription>
@@ -37,7 +38,7 @@ export default function ContactSection() {
                   <label htmlFor="message">Message</label>
                   <Textarea id="message" placeholder="Your message..." className="min-h-[120px]" />
                 </div>
-                <Button type="submit" className="w-full" variant="outline">Send Message</Button>
+                <Button type="submit" className="w-full">Send Message</Button>
               </form>
             </CardContent>
           </Card>
@@ -46,7 +47,7 @@ export default function ContactSection() {
             <h3 className="font-headline text-2xl font-bold">Contact Details</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-4">
-                <div className="rounded-md bg-primary/10 p-2 text-primary">
+                <div className="rounded-full bg-primary/10 p-3 text-primary">
                   <Mail className="h-6 w-6" />
                 </div>
                 <div>
@@ -57,7 +58,7 @@ export default function ContactSection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="rounded-md bg-primary/10 p-2 text-primary">
+                <div className="rounded-full bg-primary/10 p-3 text-primary">
                   <Linkedin className="h-6 w-6" />
                 </div>
                 <div>
@@ -68,7 +69,7 @@ export default function ContactSection() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="rounded-md bg-primary/10 p-2 text-primary">
+                <div className="rounded-full bg-primary/10 p-3 text-primary">
                   <Github className="h-6 w-6" />
                 </div>
                 <div>
@@ -79,7 +80,7 @@ export default function ContactSection() {
                 </div>
               </div>
                <div className="flex items-start gap-4">
-                <div className="rounded-md bg-primary/10 p-2 text-primary">
+                <div className="rounded-full bg-primary/10 p-3 text-primary">
                   <Twitter className="h-6 w-6" />
                 </div>
                 <div>
@@ -93,6 +94,6 @@ export default function ContactSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

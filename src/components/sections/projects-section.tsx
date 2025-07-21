@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import AnimatedSection from "@/components/animated-section";
 
 const projects = [
   {
@@ -50,11 +51,11 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-card">
+    <AnimatedSection id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">My Projects</div>
+            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-semibold uppercase tracking-wider text-primary">My Projects</div>
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Featured Work</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Here are some of the Android applications I've developed, available on the Google Play Store.
@@ -63,7 +64,7 @@ export default function ProjectsSection() {
         </div>
         <div className="mx-auto mt-12 grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
+            <Card key={index} className="overflow-hidden border-border/50 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -95,6 +96,6 @@ export default function ProjectsSection() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

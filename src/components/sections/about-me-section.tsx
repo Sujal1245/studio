@@ -1,8 +1,9 @@
 import Image from "next/image";
+import AnimatedSection from "@/components/animated-section";
 
 export default function AboutMeSection() {
   return (
-    <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-card">
+    <AnimatedSection id="about" className="w-full py-12 md:py-24 lg:py-32 bg-secondary/50">
       <div className="container px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-4">
@@ -20,12 +21,12 @@ export default function AboutMeSection() {
               alt="About me image"
               width={550}
               height={310}
-              className="aspect-video overflow-hidden rounded-xl object-cover"
+              className="aspect-video overflow-hidden rounded-xl object-cover shadow-lg"
               data-ai-hint="developer working"
             />
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }
